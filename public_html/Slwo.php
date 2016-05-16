@@ -9,7 +9,7 @@ namespace Deirde\Slwo {
     class Slwo {
 
         private $contents;
-        private $min = 4;
+        private $minChars = 4;
         private $sort;
 
         /**
@@ -51,12 +51,12 @@ namespace Deirde\Slwo {
         /**
          * @param $min
          */
-        public function min($min) {
+        public function minChars($minChars) {
 
-            if (!is_integer($min)) {
+            if (!is_integer($minChars)) {
                 trigger_error('The min parameter must be an integer', E_USER_ERROR);
             } else {
-                $this->min = $min;
+                $this->minChars = $minChars;
             }
 
         }
@@ -76,7 +76,7 @@ namespace Deirde\Slwo {
             /**
              * Get the words.
              */
-            preg_match_all('/([a-zA-Z]|\xC3[\x80-\x96\x98-\xB6\xB8-\xBF]|\xC5[\x92\x93\xA0\xA1\xB8\xBD\xBE]){' . $this->min . ',}/',
+            preg_match_all('/([0-9a-zA-Z]|\xC3[\x80-\x96\x98-\xB6\xB8-\xBF]|\xC5[\x92\x93\xA0\xA1\xB8\xBD\xBE]){' . $this->minChars . ',}/',
                 $contents, $occurrences);
 
             /**

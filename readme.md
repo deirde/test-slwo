@@ -8,7 +8,7 @@ Usage
 --------------------
 <code>$Slwo = new Slwo($contents);</code>
 
-<code>$Slwo->min(1);</code>
+<code>$Slwo->minChars(1);</code>
 
 <code>$Slwo->sort('ksort');</code>
 
