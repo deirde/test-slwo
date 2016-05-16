@@ -6,9 +6,11 @@ This tool is intended to retrieve the words list of any contents with the count 
 
 Usage
 --------------------
-<code>$Slwo = new Slwo($contents);<br/>
-$Slwo->sort('ksort');<br/>
-$Slwo->htmlOutput();</code>
+<code>$Slwo = new Slwo($contents);</code>
+
+<code>$Slwo->sort('ksort');</code>
+
+<code>$Slwo->htmlOutput();</code>
 
 Contents from a URL:
 
