@@ -48,6 +48,9 @@ namespace Deirde\Slwo {
 
         }
 
+        /**
+         * @param $min
+         */
         public function min($min) {
 
             if (!is_integer($min)) {
@@ -58,6 +61,9 @@ namespace Deirde\Slwo {
 
         }
 
+        /**
+         * @return array
+         */
         public function output() {
 
             /**
