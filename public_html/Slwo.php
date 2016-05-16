@@ -13,7 +13,7 @@ namespace Deirde\Slwo {
         private $sort;
 
         /**
-         * GitBackup constructor.
+         * Slwo constructor.
          * @param array $config
          */
         public function __construct($contents) {
